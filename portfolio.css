@@ -1,0 +1,197 @@
+
+html{
+    background: url(images/vincent-burkhead-LhlxYMfnTF0-unsplash.jpg) fixed; 
+    background-size: cover;
+}
+* {
+    font-family: 'Roboto', 'sans-serif';
+    color: #5a220e;
+}
+body {
+    padding:0;
+    margin: 0;
+    /* border-width: 0; */
+}
+nav {
+    background-color: #6f2205; 
+    padding: 5px; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.8); 
+}
+
+ul {
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    color: white;
+    list-style: none;
+    list-style-type: none;
+}
+
+.section-container, .section-container-primary {
+    padding-top: 3rem;
+    padding-left: 2rem; 
+}
+.section-container {
+    background-color: #cfae75;
+}
+
+.column-l i {
+     font-size: 64px;
+     margin-bottom: 16px;
+ }
+
+ .column-l img {
+     height: 200px;
+     width: 250px;
+ }
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    padding-left: 2rem;
+}
+
+.banner section {
+    width: 65%; 
+}
+.banner span:first-of-type img {
+    width: 20px;
+    height: 20px;
+    fill: rgb(80, 65, 0);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color:#eacc97;
+    max-width: 100%;
+    min-height: 100vh; 
+}
+
+.column-r {
+    display: flex;
+    flex-direction: column;
+    padding-left: 48px; 
+    width: 40%;
+}
+.column-r button{
+    margin-left: 4rem;
+}
+
+.column-l {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.column-l section {
+    display: flex;
+    flex-direction: column;
+    margin: auto 5rem;
+}
+
+.column-list {
+    display: flex; 
+    flex-direction: row;
+}
+
+.row {
+    display: flex;
+    margin: 3rem 0; 
+}
+
+.column-r  img {
+    width: 15rem; 
+    height: 15rem;
+    border: none;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 900; 
+    margin-bottom: 16px; 
+    margin-top: 0px; 
+}
+
+.project-card span {
+    margin-top: 10px; 
+}
+
+#button {
+    border: 2px solid rgb(80, 65, 0); 
+    border-radius: 4px;
+    padding: 8px; 
+    margin-top: 16px; 
+    width: fit-content;
+}
+
+#button a {
+    text-decoration: none;
+    font-style: none;
+    color:rgb(80, 65, 0);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#6f2205;
+    color:white;
+}
+
+footer section {
+    width: 70%;
+    margin: 8px auto; 
+
+}
+
+footer i {
+    color: white;
+    font-size: 32px; 
+
+}
+
+footer h2 {
+    /* display: flex; */
+    text-align: center;
+    color: white; 
+    width: fit-content;
+    margin: 1rem auto; 
+}
+footer div form {
+   text-align: center;
+    padding-bottom: 40px;
+}
+
+ @media screen and (max-width: 700px){
+
+    /* can I change this section to display grid when it hits this width?  */
+    .section-container, .section-container-primary, .project-card {
+        display: flex;
+        flex-direction: column;
+        /* align-items: space-evenly;  */
+    }
+    .section-container-primary, .column-list, #skills{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center; 
+    }
+    .row span{
+        margin-bottom: 1rem;
+    }
+    
+ }
+
+/*mobile first is the preferred way, so we start by building the site in the smallest version or mobile site first, then when  we do a media query use the min-width practice to expand the website, i.e. show the website and show the columns */
